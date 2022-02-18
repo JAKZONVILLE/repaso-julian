@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hi word</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        height: 100%;
+    }
+    main{
+        background-color: aliceblue;
+        height: 100%;
+        flex-wrap: 1;
+    }
+    footer{
+        background-color: green;
+        position: fixed;
+        bottom: 0rem;
+    }
+
+    #barra {
+        /* position: fixed; */
+
+        /* position: relative; */
+        /* border: 3px solid rgb(0, 0, 0); */
+        left: 1px;
+
+        width: 100vw;
+        height: 80px;
+        background-color: aquamarine;
+    }
+
+    #search {
+        background-color: gainsboro;
+        /* border: 2px solid black; */
+        width: 65vw;
+        height: 60px;
+        position: relative;
+        margin-left: 100px;
+
+    }
+
+    #index {
+        border: 3px solid rgb(0, 0, 0);
+        width: 5.3vw;
+        height: 100vh;
+        background-color: rgb(117, 117, 246);
+        position: absolute;
+        position: fixed;
+        margin-right: 5px;
+
+    }
+
+    #products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: rgb(189, 181, 181);
+        width: 65vw;
+        height: 100vh;
+        position: relative;
+        margin-left: 100px;
+
+        /* border: 2px solid black; */
+
+
+    }
+
+    #shoping {
+        background-color: aqua;
+        border: 3px solid black;
+        left: 1px;
+        width: 28.9vw;
+        height: 100px;
+        /* position: relative;
+        margin-left: 100px; */
+
+
+    }
+
+    #pd {
+        color: rgb(255, 255, 255);
+    }
+
+    #sale_button {
+        /* background-color: rgb(255, 80, 80); */
+        border: 2px solid black;
+        width: 28vw;
+        height: 40px;
+        bottom: 20px;
+
+        /* position: relative; */
+        /* margin-left: 100px; */
+
+
+    }
+
+    #cancel_sale {
+        /* background-color: coral; */
+        border: 2px solid black;
+        width: 28vw;
+        height: 40px;
+        bottom: 20px;
+        /* position: relative;
+        margin-left: 100px; */
+
+
+    }
+
+    .container-body {
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+
+    }
+    .container-main {
+        display: flex;
+        flex-flow: row;
+        height: 100%;
+
+    }
+
+
+
+    article {
+        border: 3px solid white;
+        height: 20rem;
+        width: 20rem;
+        margin: 30px;
+        background-color: white;
+    }
+
+    footer {
+        margin: 0;
+    }
+</style>
+
+<body>
+    <div class="container-body">
+
+
+        <nav id="barra">
+
+        </nav>
+        <div class="container-main">
+
+
+            <aside id="index">
+                index
+            </aside>
+            <main>
+                <section id="search">
+                    <button>search</button>
+                    <input type="text">
+
+                </section>
+
+                <section id="products">
+                    <article>article</article>
+                    <article>article</article>
+                    <article>article</article>
+
+
+                </section>
+            </main>
+            <aside>
+                <div id="shoping">
+                    <h1 id="pd"> SALES INVOICE</h1>
+                </div>
+                <footer>
+
+                    <div id="sale_button">
+                        <button>SALE</button>
+                        <span>$0.00</span>
+
+                    </div>
+                    <div id="cancel_sale">
+                        <span> 0 PRODUCTS</span>
+                        <button>CANCEL</button>
+
+                    </div>
+                </footer>
+
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>
